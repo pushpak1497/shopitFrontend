@@ -25,6 +25,7 @@ function HomePage() {
   console.log(params);
 
   const { data, isLoading, error, isError } = useGetProductsQuery(params);
+  console.log(error)
   console.log(data);
 
   useEffect(() => {
